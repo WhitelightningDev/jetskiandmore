@@ -41,6 +41,18 @@
       "files": ["*.html"],
       "extends": ["plugin:@angular-eslint/template/recommended"],
       "rules": {}
+    },
+    {
+      "files": ["server/**/*.js"], // or specify the path to your server code
+      "env": {
+        "node": true,
+        "es6": true
+      },
+      "parserOptions": {
+        "ecmaVersion": 2020, // Allow ES6/ES2020 syntax
+        "sourceType": "module"
+      },
+      "extends": ["eslint:recommended"]
     }
   ]
 }
