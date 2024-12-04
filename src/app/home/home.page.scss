@@ -1,27 +1,57 @@
-#container {
-  text-align: center;
+/* Hero Section */
+.hero-section {
+  position: relative;
+  height: 100vh; /* Full viewport height */
 
+  background-size: cover;
+  background-position: center;
+  color: rgb(0, 0, 0);
+}
+
+/* Navigation Menu Style */
+.navbar {
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
+  z-index: 1000; /* Ensures the nav is always on top */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Semi-transparent background for the navbar */
+}
+
+/* Hero Content Style */
+.hero-content {
+  position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-#container strong {
-  font-size: 20px;
-  line-height: 26px;
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
 }
 
-#container p {
-  font-size: 16px;
-  line-height: 22px;
-
-  color: #8c8c8c;
-
-  margin: 0;
+.hero-content p {
+  font-size: 1.5rem;
 }
 
-#container a {
-  text-decoration: none;
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ff6347; /* Change to your desired hover color */
 }
