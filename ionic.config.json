@@ -1,0 +1,7 @@
+{
+  "name": "jetskiandmore",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
